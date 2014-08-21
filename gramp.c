@@ -44,10 +44,10 @@ int parseForHello(char c)
 
 int main()
 {
-	int helloFound;
-           
+	int helloFound;        
 	while(1)
 	{	char c = getchar();  /*Infinte loop Obtains serial input (no spaces/enter requried) from user*/ 
+		helloFound= parseForHello(c);
 		if(helloFound)
 		{
 			printf("\nhellofound"); /*loop breaks when string is detected and helloFound=1 */
